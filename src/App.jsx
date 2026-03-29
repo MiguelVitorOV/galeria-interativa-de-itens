@@ -9,7 +9,6 @@ function App() {
         id={time.id}
         nome={time.nome}
         siglaFifa={time.siglaFifa}
-        codigoIso2={time.codigoIso2}
         continente={time.continente}
         confederacao={time.confederacao}
         capital={time.capital}
