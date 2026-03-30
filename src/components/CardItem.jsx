@@ -1,8 +1,6 @@
 export function Carditem(props) {
   return (
-    <div>
-
-      {/* {props.id} */}
+    <div key={props.id}>
       <h1>
         {props.nome} • {props.siglaFifa}
       </h1>
