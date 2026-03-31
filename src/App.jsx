@@ -3,8 +3,8 @@ import data from "./data.js"
 
 function App() {
   return (
-    <div className="flex flex-col items-center">
-      <h1>CATÁLOGO COPA DO MUNDO</h1>
+    <div className="flex flex-col items-center gap-5 mt-4">
+      <h1 className="text-xl font-semibold font">CATÁLOGO COPA DO MUNDO</h1>
 
 
 
