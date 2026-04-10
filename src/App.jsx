@@ -1,23 +1,28 @@
 import { useState } from "react"
 import { Carditem } from "./components/CardItem.jsx"
 import { FiltroConf } from "./components/FiltroConf.jsx"
+import { FiltroTitulo} from "./components/FiltroTitulo.jsx"
 import data from "./data.js"
 
 function App() {
   const [filtroConfederacao, setFiltroConfederacao] = useState(null)
-  const [filtroTitulo, setFiltroTitulo] = useState(null)
+  const [filtroTitulo, setFiltroTitulo] = useState('')
 
   return (
     <div className="flex flex-col items-center gap-5 mt-4">
       <h1 className="text-xl font-semibold font">CATÁLOGO COPA DO MUNDO</h1>
-
-      <FiltroConf setFiltro={setFiltroConfederacao}/>
+      
+      <div className="flex justify-center w-full"> 
+        <FiltroConf setFiltro={setFiltroConfederacao}/>
+        <FiltroTitulo setFiltro={setFiltroTitulo} filtro={filtroTitulo}/>
+      </div>
+      
       
       <div className="flex gap-4 flex-wrap">
         {data.filter((time) => {
           return !filtroConfederacao || time.confederacao === filtroConfederacao
         }).filter((time) => {
-          return filtroTitulo === null || time.titulosCopa === filtroTitulo
+          return filtroTitulo === null || (filtroTitulo === 0? time.titulosCopa === filtroTitulo : time.titulosCopa >= filtroTitulo)
         }).map((time) => {
         return (<Carditem key={time.id}
         id={time.id}
