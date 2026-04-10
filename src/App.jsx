@@ -22,7 +22,7 @@ function App() {
         {data.filter((time) => {
           return !filtroConfederacao || time.confederacao === filtroConfederacao
         }).filter((time) => {
-          return filtroTitulo === null || (filtroTitulo === 0? time.titulosCopa === filtroTitulo : time.titulosCopa >= filtroTitulo)
+          return filtroTitulo === '' || (filtroTitulo === 0? time.titulosCopa === filtroTitulo : time.titulosCopa >= filtroTitulo)
         }).map((time) => {
         return (<Carditem key={time.id}
         id={time.id}
