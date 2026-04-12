@@ -10,7 +10,8 @@ const data = [
     capital: 'Brasília',
     titulosCopa: 5,
     bandeira: flag('br'),
-  },
+    grupo: 'C',
+  }, 
   {
     id: 2,
     nome: 'Argentina',
@@ -21,6 +22,7 @@ const data = [
     capital: 'Buenos Aires',
     titulosCopa: 3,
     bandeira: flag('ar'),
+    grupo: 'J',
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ const data = [
     capital: 'Montevidéu',
     titulosCopa: 2,
     bandeira: flag('uy'),
+    grupo: 'H',
   },
   {
     id: 4,
@@ -43,6 +46,7 @@ const data = [
     capital: 'Bogotá',
     titulosCopa: 0,
     bandeira: flag('co'),
+    grupo: 'K',
   },
  {
     id: 5,
@@ -54,6 +58,7 @@ const data = [
     capital: 'Quito',
     titulosCopa: 0,
     bandeira: flag('ec'),
+    grupo: 'E',
   },
   {
     id: 6,
@@ -65,6 +70,7 @@ const data = [
     capital: 'Asunción',
     titulosCopa: 0,
     bandeira: flag('py'),
+    grupo: 'D',
   },
   {
     id: 7,
@@ -76,6 +82,7 @@ const data = [
     capital: 'Washington, D.C.',
     titulosCopa: 0,
     bandeira: flag('us'),
+    grupo: 'D',
   },
   {
     id: 8,
@@ -87,6 +94,7 @@ const data = [
     capital: 'Cidade do México',
     titulosCopa: 0,
     bandeira: flag('mx'),
+    grupo: 'A',
   },
   {
     id: 9,
@@ -98,6 +106,7 @@ const data = [
     capital: 'Ottawa',
     titulosCopa: 0,
     bandeira: flag('ca'),
+    grupo: 'B',
   },
   {
     id: 10,
@@ -109,6 +118,7 @@ const data = [
     capital: 'Willemstad ',
     titulosCopa: 0,
     bandeira: flag('cw'),
+    grupo: 'E',
   },
 
   {
@@ -121,6 +131,7 @@ const data = [
     capital: 'Paris',
     titulosCopa: 2,
     bandeira: flag('fr'),
+    grupo: 'I',
   },
   {
     id: 12,
@@ -132,6 +143,7 @@ const data = [
     capital: 'Berlim',
     titulosCopa: 4,
     bandeira: flag('de'),
+    grupo: 'E',
   },
   {
     id: 13,
@@ -143,6 +155,7 @@ const data = [
     capital: 'Madri',
     titulosCopa: 1,
     bandeira: flag('es'),
+    grupo: 'H',
   },
   {
     id: 14,
@@ -154,6 +167,7 @@ const data = [
     capital: 'Lisboa',
     titulosCopa: 0,
     bandeira: flag('pt'),
+    grupo: 'K',
   },
   {
     id: 15,
@@ -165,6 +179,7 @@ const data = [
     capital: 'Sarajevo',
     titulosCopa: 0,
     bandeira: flag('ba'),
+    grupo: 'B',
   },
   {
     id: 16,
@@ -176,6 +191,7 @@ const data = [
     capital: 'Amsterdã',
     titulosCopa: 0,
     bandeira: flag('nl'),
+    grupo: 'F',
   },
   {
     id: 17,
@@ -187,6 +203,7 @@ const data = [
     capital: 'Bruxelas',
     titulosCopa: 0,
     bandeira: flag('be'),
+    grupo: 'G',
   },
   {
     id: 18,
@@ -198,6 +215,7 @@ const data = [
     capital: 'Berna',
     titulosCopa: 0,
     bandeira: flag('ch'),
+    grupo: 'B',
   },
   {
     id: 19,
@@ -209,6 +227,7 @@ const data = [
     capital: 'Zagreb',
     titulosCopa: 0,
     bandeira: flag('hr'),
+    grupo: 'L',
   },
   {
     id: 20,
@@ -220,6 +239,7 @@ const data = [
     capital: 'Londres',
     titulosCopa: 1,
     bandeira: flag('gb'),
+    grupo: 'L',
   },
   {
     id: 21,
@@ -231,6 +251,7 @@ const data = [
     capital: 'Tóquio',
     titulosCopa: 0,
     bandeira: flag('jp'),
+    grupo: 'F',
   },
   {
     id: 22,
@@ -242,6 +263,7 @@ const data = [
     capital: 'Seul',
     titulosCopa: 0,
     bandeira: flag('kr'),
+    grupo: 'A',
   },
   {
     id: 23,
@@ -253,6 +275,7 @@ const data = [
     capital: 'Canberra',
     titulosCopa: 0,
     bandeira: flag('au'),
+    grupo: 'D',
   },
   {
     id: 24,
@@ -264,6 +287,7 @@ const data = [
     capital: 'Riad',
     titulosCopa: 0,
     bandeira: flag('sa'),
+    grupo: 'H',
   },
   {
     id: 25,
@@ -275,6 +299,7 @@ const data = [
     capital: 'Teerã',
     titulosCopa: 0,
     bandeira: flag('ir'),
+    grupo: 'G',
   },
   {
     id: 26,
@@ -286,6 +311,7 @@ const data = [
     capital: 'Doha',
     titulosCopa: 0,
     bandeira: flag('qa'),
+    grupo: 'B',
   },
   {
     id: 27,
@@ -297,6 +323,7 @@ const data = [
     capital: 'Dakar',
     titulosCopa: 0,
     bandeira: flag('sn'),
+    grupo: 'I',
   },
   {
     id: 28,
@@ -308,6 +335,7 @@ const data = [
     capital: 'Rabat',
     titulosCopa: 0,
     bandeira: flag('ma'),
+    grupo: 'C',
   },
   {
     id: 29,
@@ -319,6 +347,7 @@ const data = [
     capital: 'Argel',
     titulosCopa: 0,
     bandeira: flag('dz'),
+    grupo: 'J',
   },
   {
     id: 30,
@@ -330,6 +359,7 @@ const data = [
     capital: 'Acra',
     titulosCopa: 0,
     bandeira: flag('gh'),
+    grupo: 'L',
   },
   {
     id: 31,
@@ -341,6 +371,7 @@ const data = [
     capital: 'Praia',
     titulosCopa: 0,
     bandeira: flag('cv'),
+    grupo: 'H',
   },
   {
     id: 32,
@@ -352,6 +383,7 @@ const data = [
     capital: 'Túnis',
     titulosCopa: 0,
     bandeira: flag('tn'),
+    grupo: 'F',
   },
     {
     id: 33,
@@ -363,6 +395,7 @@ const data = [
     capital: 'Port-au-Prince',
     titulosCopa: 0,
     bandeira: flag('ht'),
+    grupo: 'C',
   },
     {
     id: 34,
@@ -374,6 +407,7 @@ const data = [
     capital: 'Cidade do Panamá',
     titulosCopa: 0,
     bandeira: flag('pa'),
+    grupo: 'L',
   },
     {
     id: 35,
@@ -385,6 +419,7 @@ const data = [
     capital: 'Edimburgo',
     titulosCopa: 0,
     bandeira: flag('gb-sct'),
+    grupo: 'C',
   },
  {
     id: 36,
@@ -396,6 +431,7 @@ const data = [
     capital: 'Oslo',
     titulosCopa: 0,
     bandeira: flag('no'),
+    grupo: 'I',
   },
   {
     id: 37,
@@ -407,6 +443,7 @@ const data = [
     capital: 'Estocolmo',
     titulosCopa: 0,
     bandeira: flag('se'),
+    grupo: 'F',
   },
   {
     id: 38,
@@ -418,6 +455,7 @@ const data = [
     capital: 'Praga',
     titulosCopa: 0,
     bandeira: flag('cz'),
+    grupo: 'A',
   },
   {
     id: 39,
@@ -429,6 +467,7 @@ const data = [
     capital: 'Ankara',
     titulosCopa: 0,
     bandeira: flag('tr'),
+    grupo: 'D',
   },
   {
     id: 40,
@@ -440,6 +479,7 @@ const data = [
     capital: 'Viena',
     titulosCopa: 0,
     bandeira: flag('at'),
+    grupo: 'J',
   },
   {
     id: 41,
@@ -451,6 +491,7 @@ const data = [
     capital: 'Amman',
     titulosCopa: 0,
     bandeira: flag('jo'),
+    grupo: 'J',
   },
     {
     id: 42,
@@ -462,6 +503,7 @@ const data = [
     capital: 'Tashkent',
     titulosCopa: 0,
     bandeira: flag('uz'),
+    grupo: 'K',
   },
   {
     id: 43,
@@ -473,6 +515,7 @@ const data = [
     capital: 'Bagdá',
     titulosCopa: 0,
     bandeira: flag('iq'),
+    grupo: 'I',
   },
   {
     id: 44,
@@ -484,6 +527,7 @@ const data = [
     capital: 'Yamooussoukro',
     titulosCopa: 0,
     bandeira: flag('ci'),
+    grupo: 'E',
   },
  {
     id: 45,
@@ -495,6 +539,7 @@ const data = [
     capital: 'Cairo',
     titulosCopa: 0,
     bandeira: flag('eg'),
+    grupo: 'G',
   },
   {
     id: 46,
@@ -506,6 +551,7 @@ const data = [
     capital: 'Kinshasa',
     titulosCopa: 0,
     bandeira: flag('cd'),
+    grupo: 'K',
   },
   {
     id: 47,
@@ -517,6 +563,7 @@ const data = [
     capital: 'Cidade do Cabo, Bloemfontein e Pretória',
     titulosCopa: 0,
     bandeira: flag('za'),
+    grupo: 'A',
   },
     {
     id: 48,
@@ -528,6 +575,7 @@ const data = [
     capital: 'Wellington',
     titulosCopa: 0,
     bandeira: flag('nz'),
+    grupo: 'G',
   },
 ]
 export default data
