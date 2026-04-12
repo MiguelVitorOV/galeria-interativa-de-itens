@@ -33,6 +33,7 @@ function App() {
         capital={time.capital}
         titulosCopa={time.titulosCopa}
         bandeira={time.bandeira}
+        grupo={time.grupo}
         />)
       })}
       </div>
