@@ -7,6 +7,7 @@ import data from "./data.js"
 function App() {
   const [filtroConfederacao, setFiltroConfederacao] = useState(null)
   const [filtroTitulo, setFiltroTitulo] = useState('')
+  const [filtroGrupo, setFiltroGrupo] = useState([])
 
   return (
     <div className="flex flex-col items-center gap-5 mt-4">
@@ -23,6 +24,8 @@ function App() {
           return !filtroConfederacao || time.confederacao === filtroConfederacao
         }).filter((time) => {
           return filtroTitulo === '' || (filtroTitulo === 0? time.titulosCopa === filtroTitulo : time.titulosCopa >= filtroTitulo)
+        }).filter((time) => {
+          return filtroGrupo.length === 0 || filtroGrupo.includes(time.grupo)
         }).map((time) => {
         return (<Carditem key={time.id}
         id={time.id}
