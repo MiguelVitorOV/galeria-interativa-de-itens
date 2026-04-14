@@ -1,7 +1,8 @@
 import { useState } from "react"
 import { Carditem } from "./components/CardItem.jsx"
 import { FiltroConf } from "./components/FiltroConf.jsx"
-import { FiltroTitulo} from "./components/FiltroTitulo.jsx"
+import { FiltroTitulo } from "./components/FiltroTitulo.jsx"
+import { FiltroGrupo } from "./components/FiltroGrupo.jsx"
 import data from "./data.js"
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <div className="flex justify-center w-full"> 
         <FiltroConf setFiltro={setFiltroConfederacao}/>
         <FiltroTitulo setFiltro={setFiltroTitulo} filtro={filtroTitulo}/>
+        <FiltroGrupo setFiltro={setFiltroGrupo} filtro={filtroGrupo}/>
       </div>
       
       
