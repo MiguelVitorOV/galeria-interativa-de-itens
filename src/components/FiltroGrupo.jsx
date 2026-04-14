@@ -21,20 +21,25 @@ export function FiltroGrupo(props){
     }
 
     return (
-        <div>
-            <button onClick={atualizarFiltro} value='Sem filtro'>Sem filtro</button>
-            <button onClick={atualizarFiltro} value='A'>A</button>
-            <button onClick={atualizarFiltro} value='B'>B</button>
-            <button onClick={atualizarFiltro} value='C'>C</button>
-            <button onClick={atualizarFiltro} value='D'>D</button>
-            <button onClick={atualizarFiltro} value='E'>E</button>
-            <button onClick={atualizarFiltro} value='F'>F</button>
-            <button onClick={atualizarFiltro} value='G'>G</button>
-            <button onClick={atualizarFiltro} value='H'>H</button>
-            <button onClick={atualizarFiltro} value='I'>I</button>
-            <button onClick={atualizarFiltro} value='J'>J</button>
-            <button onClick={atualizarFiltro} value='K'>K</button>
-            <button onClick={atualizarFiltro} value='L'>L</button>
+        <div className="flex flex-col items-center flex-wrap">
+            <h1>GRUPO:</h1>
+
+            <div className="flex p-4 items-center gap-2 flex-wrap">
+                <button className="border border-black rounded-full px-2 "onClick={atualizarFiltro} value='Sem filtro'>Sem filtro</button>
+                <button className="border border-black rounded-full px-2 "onClick={atualizarFiltro} value='A'>A</button>
+                <button className="border border-black rounded-full px-2 "onClick={atualizarFiltro} value='B'>B</button>
+                <button className="border border-black rounded-full px-2 "onClick={atualizarFiltro} value='C'>C</button>
+                <button className="border border-black rounded-full px-2 "onClick={atualizarFiltro} value='D'>D</button>
+                <button className="border border-black rounded-full px-2 "onClick={atualizarFiltro} value='E'>E</button>
+                <button className="border border-black rounded-full px-2 "onClick={atualizarFiltro} value='F'>F</button>
+                <button className="border border-black rounded-full px-2 "onClick={atualizarFiltro} value='G'>G</button>
+                <button className="border border-black rounded-full px-2 "onClick={atualizarFiltro} value='H'>H</button>
+                <button className="border border-black rounded-full px-2 "onClick={atualizarFiltro} value='I'>I</button>
+                <button className="border border-black rounded-full px-2 "onClick={atualizarFiltro} value='J'>J</button>
+                <button className="border border-black rounded-full px-2 "onClick={atualizarFiltro} value='K'>K</button>
+                <button className="border border-black rounded-full px-2 "onClick={atualizarFiltro} value='L'>L</button>
+
+            </div>
         </div>
     )
 }
