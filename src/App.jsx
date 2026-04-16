@@ -16,7 +16,7 @@ function App() {
       <h1 className="text-xl font-semibold font">CATÁLOGO COPA DO MUNDO</h1>
       
       <div className="flex justify-center w-full"> 
-        <FiltroConf setFiltro={setFiltroConfederacao}/>
+        <FiltroConf setFiltro={setFiltroConfederacao} filtro={filtroConfederacao}/>
         <FiltroTitulo setFiltro={setFiltroTitulo} filtro={filtroTitulo}/>
         <FiltroGrupo setFiltro={setFiltroGrupo} filtro={filtroGrupo}/>
       </div>
