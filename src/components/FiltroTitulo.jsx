@@ -9,7 +9,7 @@ export function FiltroTitulo(props) {
             <h1>TÍTULOS:</h1>
             <div className="flex p-4 items-center gap-2">
                 <select value={props.filtro} onChange={setFiltro}
-                className="rounded-full p-2">
+                className={`border border-black rounded-full p-2 ${props.filtro !== "" ? "bg-yellow-500" : "bg-white"}`}>
                     <option value="">Sem Filtro</option>
                     <option value='0'>Nenhum</option>
                     <option value='1'>1+</option>
