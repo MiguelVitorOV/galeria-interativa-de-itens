@@ -22,21 +22,9 @@ function App() {
       </div>
       
       
-      <div className="flex gap-4 flex-wrap">
-        {filtrar(data, filtroTitulo, filtroGrupo, filtroConfederacao).map((time) => {
-        return (<Carditem key={time.id}
-        id={time.id}
-        nome={time.nome}
-        siglaFifa={time.siglaFifa}
-        continente={time.continente}
-        confederacao={time.confederacao}
-        capital={time.capital}
-        titulosCopa={time.titulosCopa}
-        bandeira={time.bandeira}
-        grupo={time.grupo}
-        />)
-      })}
-      </div>
+      <Carditem listaFiltrada={filtrar(data, filtroTitulo, filtroGrupo, filtroConfederacao)}/>  
+        
+      
     </div>
   )
 }
