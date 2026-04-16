@@ -4,6 +4,7 @@ import { FiltroConf } from "./components/FiltroConf.jsx"
 import { FiltroTitulo } from "./components/FiltroTitulo.jsx"
 import { FiltroGrupo } from "./components/FiltroGrupo.jsx"
 import data from "./data.js"
+import { filtrar } from "./utils/filtrar.js"
 
 function App() {
   const [filtroConfederacao, setFiltroConfederacao] = useState(null)
@@ -22,13 +23,7 @@ function App() {
       
       
       <div className="flex gap-4 flex-wrap">
-        {data.filter((time) => {
-          return !filtroConfederacao || time.confederacao === filtroConfederacao
-        }).filter((time) => {
-          return filtroTitulo === '' || (filtroTitulo === 0? time.titulosCopa === filtroTitulo : time.titulosCopa >= filtroTitulo)
-        }).filter((time) => {
-          return filtroGrupo.length === 0 || filtroGrupo.includes(time.grupo)
-        }).map((time) => {
+        {filtrar(data, filtroTitulo, filtroGrupo, filtroConfederacao).map((time) => {
         return (<Carditem key={time.id}
         id={time.id}
         nome={time.nome}
