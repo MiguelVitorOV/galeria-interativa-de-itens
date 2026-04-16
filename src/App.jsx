@@ -7,7 +7,7 @@ import data from "./data.js"
 import { filtrar } from "./utils/filtrar.js"
 
 function App() {
-  const [filtroConfederacao, setFiltroConfederacao] = useState(null)
+  const [filtroConfederacao, setFiltroConfederacao] = useState('')
   const [filtroTitulo, setFiltroTitulo] = useState('')
   const [filtroGrupo, setFiltroGrupo] = useState([])
 
