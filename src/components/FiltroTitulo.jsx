@@ -6,10 +6,14 @@ export function FiltroTitulo(props) {
     
     return (
         <div className="flex flex-col items-center">
-            <h1>TÍTULOS:</h1>
+            <h1 className="text-ouro-medio font-medium">TÍTULOS:</h1>
             <div className="flex p-4 items-center gap-2">
                 <select value={props.filtro} onChange={setFiltro}
-                className={`border border-black rounded-full p-2 ${props.filtro !== "" ? "bg-yellow-500" : "bg-white"}`}>
+                className={`border rounded-full px-3 py-1.5 outline-none
+            ${props.filtro !== ""
+              ? "bg-ouro-medio text-trofeu-text-escuro border-ouro-medio hover:bg-ouro-escuro hover:border-ouro-escuro"
+              : "bg-trofeu-bg-escuro text-trofeu-text-claro border-ouro-escuro/40 hover:border-ouro-brilhante hover:text-ouro-brilhante"
+            }`}>
                     <option value="">Sem Filtro</option>
                     <option value='0'>Nenhum</option>
                     <option value='1'>1+</option>
