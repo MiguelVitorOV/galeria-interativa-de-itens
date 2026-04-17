@@ -14,14 +14,14 @@ function App() {
   const [filtroBusca, setFiltroBusca] = useState('')
 
   return (
-    <div className="flex flex-col items-center gap-5 mt-4">
+    <div className="flex flex-col items-center gap-5 mt-4 p-1">
       <h1 className="text-xl font-semibold font">CATÁLOGO COPA DO MUNDO</h1>
       
-      <div className="flex justify-center w-full"> 
-        <FiltroConf setFiltro={setFiltroConfederacao} filtro={filtroConfederacao}/>
-        <FiltroTitulo setFiltro={setFiltroTitulo} filtro={filtroTitulo}/>
-        <FiltroGrupo setFiltro={setFiltroGrupo} filtro={filtroGrupo}/>
+      <div className="flex justify-center w-full gap-2"> 
         <FiltroBusca setFiltro={setFiltroBusca} filtro={filtroBusca} />
+        <FiltroGrupo setFiltro={setFiltroGrupo} filtro={filtroGrupo}/>
+        <FiltroConf setFiltro={setFiltroConfederacao} filtro={filtroConfederacao}/>     
+        <FiltroTitulo setFiltro={setFiltroTitulo} filtro={filtroTitulo}/>
       </div>
       
       
