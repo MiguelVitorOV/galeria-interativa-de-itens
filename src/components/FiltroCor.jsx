@@ -28,9 +28,9 @@ export function FiltroCor(props) {
 
     return (
         <div className="flex flex-col items-center flex-wrap">
-            <h1>Cor na bandeira:</h1>
+            <h1>CORES NA BANDEIRA:</h1>
 
-            <div className="flex p-4 items-center gap-2 flex-wrap">
+            <div className="flex justify-center p-4 items-center gap-2 flex-wrap">
                 <button className={`border border-black rounded-full px-2 ${botaoAtivo('Sem Filtro')}`} onClick={atualizarFiltro} value='Sem filtro'>Sem filtro</button>
                 <button className={`border border-black rounded-full px-2 ${botaoAtivo('Verde')}`} onClick={atualizarFiltro} value='Verde'>Verde</button>
                 <button className={`border border-black rounded-full px-2 ${botaoAtivo('Amarelo')}`} onClick={atualizarFiltro} value='Amarelo'>Amarelo</button>

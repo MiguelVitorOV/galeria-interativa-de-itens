@@ -15,7 +15,7 @@ export function FiltroConf(props) {
     return (
         <div className="flex flex-col items-center">
             <h1>CONFEDERAÇÃO:</h1>
-            <div className="flex p-4 items-center gap-2">
+            <div className="flex flex-wrap p-4 items-center justify-center gap-2">
                 <button value='' onClick={setFiltro}
                  className={`border border-black rounded-full p-2 ${botaoAtivo('')}`}
                  >TODAS</button>

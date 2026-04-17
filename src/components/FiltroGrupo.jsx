@@ -29,7 +29,7 @@ export function FiltroGrupo(props){
         <div className="flex flex-col items-center flex-wrap">
             <h1>GRUPO:</h1>
 
-            <div className="flex p-4 items-center gap-2 flex-wrap">
+            <div className="flex p-4 items-center gap-2 justify-center flex-wrap">
                 <button className={`border border-black rounded-full px-2 ${botaoAtivo('Sem Filtro')}`} onClick={atualizarFiltro} value='Sem filtro'>Sem filtro</button>
                 <button className={`border border-black rounded-full px-2 ${botaoAtivo('A')}`} onClick={atualizarFiltro} value='A'>A</button>
                 <button className={`border border-black rounded-full px-2 ${botaoAtivo('B')}`} onClick={atualizarFiltro} value='B'>B</button>
