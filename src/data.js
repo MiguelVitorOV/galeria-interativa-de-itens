@@ -1,4 +1,5 @@
 const flag = (codigoIso2) => `https://flagcdn.com/w320/${codigoIso2}.png`
+
 const data = [
   {
     id: 1,
@@ -11,6 +12,7 @@ const data = [
     titulosCopa: 5,
     bandeira: flag('br'),
     grupo: 'C',
+    cores: ["Verde", "Amarelo", "Azul", "Branco"]
   }, 
   {
     id: 2,
@@ -23,6 +25,7 @@ const data = [
     titulosCopa: 3,
     bandeira: flag('ar'),
     grupo: 'J',
+    cores: ["Azul", "Branco", "Amarelo"]
   },
   {
     id: 3,
@@ -35,6 +38,7 @@ const data = [
     titulosCopa: 2,
     bandeira: flag('uy'),
     grupo: 'H',
+    cores: ["Azul", "Branco", "Amarelo"]
   },
   {
     id: 4,
@@ -47,8 +51,9 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('co'),
     grupo: 'K',
+    cores: ["Amarelo", "Azul", "Vermelho"]
   },
- {
+  {
     id: 5,
     nome: 'Equador',
     siglaFifa: 'ECU',
@@ -59,6 +64,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('ec'),
     grupo: 'E',
+    cores: ["Amarelo", "Azul", "Vermelho", "Marrom", "Verde", "Cinza"]
   },
   {
     id: 6,
@@ -71,6 +77,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('py'),
     grupo: 'D',
+    cores: ["Vermelho", "Branco", "Azul", "Amarelo", "Verde", "Preto"]
   },
   {
     id: 7,
@@ -83,6 +90,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('us'),
     grupo: 'D',
+    cores: ["Vermelho", "Branco", "Azul"]
   },
   {
     id: 8,
@@ -95,6 +103,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('mx'),
     grupo: 'A',
+    cores: ["Verde", "Branco", "Vermelho", "Amarelo", "Marrom"]
   },
   {
     id: 9,
@@ -107,6 +116,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('ca'),
     grupo: 'B',
+    cores: ["Vermelho", "Branco"]
   },
   {
     id: 10,
@@ -119,8 +129,8 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('cw'),
     grupo: 'E',
+    cores: ["Azul", "Amarelo", "Branco"]
   },
-
   {
     id: 11,
     nome: 'França',
@@ -132,6 +142,7 @@ const data = [
     titulosCopa: 2,
     bandeira: flag('fr'),
     grupo: 'I',
+    cores: ["Azul", "Branco", "Vermelho"]
   },
   {
     id: 12,
@@ -144,6 +155,7 @@ const data = [
     titulosCopa: 4,
     bandeira: flag('de'),
     grupo: 'E',
+    cores: ["Preto", "Vermelho", "Amarelo"]
   },
   {
     id: 13,
@@ -156,6 +168,7 @@ const data = [
     titulosCopa: 1,
     bandeira: flag('es'),
     grupo: 'H',
+    cores: ["Vermelho", "Amarelo", "Azul", "Cinza", "Rosa "]
   },
   {
     id: 14,
@@ -168,6 +181,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('pt'),
     grupo: 'K',
+    cores: ["Verde", "Vermelho", "Amarelo", "Azul", "Branco"]
   },
   {
     id: 15,
@@ -180,6 +194,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('ba'),
     grupo: 'B',
+    cores: ["Azul", "Amarelo", "Branco"]
   },
   {
     id: 16,
@@ -192,6 +207,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('nl'),
     grupo: 'F',
+    cores: ["Vermelho", "Branco", "Azul"]
   },
   {
     id: 17,
@@ -204,6 +220,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('be'),
     grupo: 'G',
+    cores: ["Preto", "Amarelo", "Vermelho"]
   },
   {
     id: 18,
@@ -216,6 +233,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('ch'),
     grupo: 'B',
+    cores: ["Vermelho", "Branco"]
   },
   {
     id: 19,
@@ -228,6 +246,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('hr'),
     grupo: 'L',
+    cores: ["Vermelho", "Branco", "Azul", "Amarelo  "]
   },
   {
     id: 20,
@@ -240,6 +259,7 @@ const data = [
     titulosCopa: 1,
     bandeira: flag('gb'),
     grupo: 'L',
+    cores: ["Branco", "Vermelho"]
   },
   {
     id: 21,
@@ -252,6 +272,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('jp'),
     grupo: 'F',
+    cores: ["Branco", "Vermelho"]
   },
   {
     id: 22,
@@ -264,6 +285,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('kr'),
     grupo: 'A',
+    cores: ["Branco", "Preto", "Vermelho", "Azul"]
   },
   {
     id: 23,
@@ -276,6 +298,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('au'),
     grupo: 'D',
+    cores: ["Azul", "Branco", "Vermelho"]
   },
   {
     id: 24,
@@ -288,6 +311,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('sa'),
     grupo: 'H',
+    cores: ["Verde", "Branco"]
   },
   {
     id: 25,
@@ -300,6 +324,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('ir'),
     grupo: 'G',
+    cores: ["Verde", "Branco", "Vermelho"]
   },
   {
     id: 26,
@@ -312,6 +337,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('qa'),
     grupo: 'B',
+    cores: ["Vermelho", "Branco"]
   },
   {
     id: 27,
@@ -324,6 +350,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('sn'),
     grupo: 'I',
+    cores: ["Verde", "Amarelo", "Vermelho"]
   },
   {
     id: 28,
@@ -336,6 +363,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('ma'),
     grupo: 'C',
+    cores: ["Vermelho", "Verde"]
   },
   {
     id: 29,
@@ -348,6 +376,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('dz'),
     grupo: 'J',
+    cores: ["Verde", "Branco", "Vermelho"]
   },
   {
     id: 30,
@@ -360,6 +389,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('gh'),
     grupo: 'L',
+    cores: ["Vermelho", "Amarelo", "Verde", "Preto"]
   },
   {
     id: 31,
@@ -372,6 +402,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('cv'),
     grupo: 'H',
+    cores: ["Azul", "Branco", "Vermelho", "Amarelo"]
   },
   {
     id: 32,
@@ -384,8 +415,9 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('tn'),
     grupo: 'F',
+    cores: ["Vermelho", "Branco"]
   },
-    {
+  {
     id: 33,
     nome: 'Haiti',
     siglaFifa: 'HAI',
@@ -396,8 +428,9 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('ht'),
     grupo: 'C',
+    cores: ["Azul", "Vermelho", "Branco", "Verde", "Amarelo"]
   },
-    {
+  {
     id: 34,
     nome: 'Panamá',
     siglaFifa: 'PAN',
@@ -408,8 +441,9 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('pa'),
     grupo: 'L',
+    cores: ["Branco", "Azul", "Vermelho"]
   },
-    {
+  {
     id: 35,
     nome: 'Escócia',
     siglaFifa: 'SCO',
@@ -420,8 +454,9 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('gb-sct'),
     grupo: 'C',
+    cores: ["Azul", "Branco"]
   },
- {
+  {
     id: 36,
     nome: 'Noruega',
     siglaFifa: 'NOR',
@@ -432,6 +467,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('no'),
     grupo: 'I',
+    cores: ["Vermelho", "Branco", "Azul"]
   },
   {
     id: 37,
@@ -444,6 +480,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('se'),
     grupo: 'F',
+    cores: ["Azul", "Amarelo"]
   },
   {
     id: 38,
@@ -456,6 +493,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('cz'),
     grupo: 'A',
+    cores: ["Branco", "Vermelho", "Azul"]
   },
   {
     id: 39,
@@ -468,6 +506,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('tr'),
     grupo: 'D',
+    cores: ["Vermelho", "Branco"]
   },
   {
     id: 40,
@@ -480,6 +519,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('at'),
     grupo: 'J',
+    cores: ["Vermelho", "Branco"]
   },
   {
     id: 41,
@@ -492,8 +532,9 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('jo'),
     grupo: 'J',
+    cores: ["Preto", "Branco", "Verde", "Vermelho"]
   },
-    {
+  {
     id: 42,
     nome: 'Uzbequistão',
     siglaFifa: 'UZB',
@@ -504,6 +545,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('uz'),
     grupo: 'K',
+    cores: ["Azul", "Branco", "Verde", "Vermelho"]
   },
   {
     id: 43,
@@ -516,6 +558,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('iq'),
     grupo: 'I',
+    cores: ["Vermelho", "Branco", "Preto", "Verde"]
   },
   {
     id: 44,
@@ -528,8 +571,9 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('ci'),
     grupo: 'E',
+    cores: ["Laranja", "Branco", "Verde"]
   },
- {
+  {
     id: 45,
     nome: 'Egito',
     siglaFifa: 'EGY',
@@ -540,6 +584,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('eg'),
     grupo: 'G',
+    cores: ["Vermelho", "Branco", "Preto", "Amarelo"]
   },
   {
     id: 46,
@@ -552,6 +597,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('cd'),
     grupo: 'K',
+    cores: ["Azul", "Amarelo", "Vermelho"]
   },
   {
     id: 47,
@@ -564,18 +610,21 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('za'),
     grupo: 'A',
+    cores: ["Preto", "Amarelo", "Verde", "Branco", "Vermelho", "Azul"]
   },
-    {
+  {
     id: 48,
     nome: 'Nova Zelândia',
     siglaFifa: 'NZL',
     codigoIso2: 'nz',
-    continente: 'África',
+    continente: 'Oceania',
     confederacao: 'OFC',
     capital: 'Wellington',
     titulosCopa: 0,
     bandeira: flag('nz'),
     grupo: 'G',
+    cores: ["Azul", "Vermelho", "Branco"]
   },
 ]
+
 export default data
