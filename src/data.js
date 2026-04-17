@@ -168,7 +168,7 @@ const data = [
     titulosCopa: 1,
     bandeira: flag('es'),
     grupo: 'H',
-    cores: ["Vermelho", "Amarelo", "Azul", "Cinza", "Rosa "]
+    cores: ["Vermelho", "Amarelo", "Azul", "Cinza", "Rosa"]
   },
   {
     id: 14,
@@ -246,7 +246,7 @@ const data = [
     titulosCopa: 0,
     bandeira: flag('hr'),
     grupo: 'L',
-    cores: ["Vermelho", "Branco", "Azul", "Amarelo  "]
+    cores: ["Vermelho", "Branco", "Azul", "Amarelo"]
   },
   {
     id: 20,
