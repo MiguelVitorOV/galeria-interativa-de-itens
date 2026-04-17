@@ -10,6 +10,7 @@ function App() {
   const [filtroConfederacao, setFiltroConfederacao] = useState('')
   const [filtroTitulo, setFiltroTitulo] = useState('')
   const [filtroGrupo, setFiltroGrupo] = useState([])
+  const [filtroBusca, setFiltroBusca] = useState('')
 
   return (
     <div className="flex flex-col items-center gap-5 mt-4">
@@ -22,7 +23,7 @@ function App() {
       </div>
       
       
-      <Carditem listaFiltrada={filtrar(data, filtroTitulo, filtroGrupo, filtroConfederacao)}/>  
+      <Carditem listaFiltrada={filtrar(data, filtroTitulo, filtroGrupo, filtroConfederacao, filtroBusca)}/>  
         
       
     </div>
