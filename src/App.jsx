@@ -5,6 +5,7 @@ import { FiltroTitulo } from "./components/FiltroTitulo.jsx"
 import { FiltroGrupo } from "./components/FiltroGrupo.jsx"
 import data from "./data.js"
 import { filtrar } from "./utils/filtrar.js"
+import { FiltroBusca } from "./components/FiltroBusca.jsx"
 
 function App() {
   const [filtroConfederacao, setFiltroConfederacao] = useState('')
@@ -20,6 +21,7 @@ function App() {
         <FiltroConf setFiltro={setFiltroConfederacao} filtro={filtroConfederacao}/>
         <FiltroTitulo setFiltro={setFiltroTitulo} filtro={filtroTitulo}/>
         <FiltroGrupo setFiltro={setFiltroGrupo} filtro={filtroGrupo}/>
+        <FiltroBusca setFiltro={setFiltroBusca} filtro={filtroBusca} />
       </div>
       
       
