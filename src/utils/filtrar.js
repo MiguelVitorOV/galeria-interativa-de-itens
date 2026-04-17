@@ -1,4 +1,4 @@
-export function filtrar(data, filtroTitulo, filtroGrupo, filtroConfederacao, filtroBusca){
+export function filtrar(data, filtroTitulo, filtroGrupo, filtroConfederacao, filtroBusca, filtroCor){
     const timesFiltrados = data.filter((time) => {
           return !filtroConfederacao || time.confederacao === filtroConfederacao
         }).filter((time) => {
@@ -7,6 +7,10 @@ export function filtrar(data, filtroTitulo, filtroGrupo, filtroConfederacao, fil
           return filtroGrupo.length === 0 || filtroGrupo.includes(time.grupo)
         }).filter((time) => {
             return filtroBusca === '' || time.nome.toLowerCase().includes(filtroBusca.toLowerCase())
+        }).filter((time) => {
+            return filtroCor.length === 0 || filtroCor.every((cor) => {
+              return time.cores.includes(cor)
+            })
         })
     return timesFiltrados
 }
