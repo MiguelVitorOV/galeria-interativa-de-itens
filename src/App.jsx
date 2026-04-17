@@ -16,8 +16,8 @@ function App() {
   const [filtroCor, setFiltroCor] = useState([])
 
   return (
-    <div className="flex flex-col items-center gap-5 mt-4 p-1">
-      <h1 className="text-xl font-semibold font">CATÁLOGO COPA DO MUNDO</h1>
+    <div className="flex flex-col items-center gap-5 m-1 py-8 bg-trofeu-bg-escuro">
+      <h1 className="text-xl font-semibold text-ouro-brilhante">CATÁLOGO COPA DO MUNDO</h1>
       
       <div className="flex justify-center w-full gap-2"> 
         <FiltroBusca setFiltro={setFiltroBusca} filtro={filtroBusca} />
