@@ -9,35 +9,37 @@ export function FiltroConf(props) {
     }
 
     const botaoAtivo = (valor) => {
-        return props.filtro === valor? "bg-yellow-500" : ""
+        return props.filtro === valor
+      ? "bg-ouro-medio text-trofeu-text-escuro border-ouro-medio font-semibold hover:bg-ouro-escuro hover:border-ouro-escuro"
+      : "bg-transparent text-trofeu-text-claro border-ouro-escuro/40 hover:border-ouro-brilhante hover:text-ouro-brilhante"
     }
 
     return (
         <div className="flex flex-col items-center">
-            <h1>CONFEDERAÇÃO:</h1>
+            <h1 className="text-ouro-medio font-medium">CONFEDERAÇÃO:</h1>
             <div className="flex flex-wrap p-4 items-center justify-center gap-2">
                 <button value='' onClick={setFiltro}
-                 className={`border border-black rounded-full p-2 ${botaoAtivo('')}`}
-                 >TODAS</button>
+                className={`border rounded-full px-3 py-1.5 ${botaoAtivo('')}`}>
+                Todas</button>
                 <button value='AFC' onClick={setFiltro}
-                 className={`border border-black rounded-full p-2 ${botaoAtivo('AFC')}`}
-                 >AFC</button>
+                className={`border rounded-full px-3 py-1.5 ${botaoAtivo('AFC')}`}>
+                AFC</button>
                 <button value='CAF' onClick={setFiltro}
-                 className={`border border-black rounded-full p-2 ${botaoAtivo('CAF')}`}
-                 >CAF</button>
+                className={`border rounded-full px-3 py-1.5 ${botaoAtivo('CAF')}`}>
+                CAF</button>
                 <button value='CONCACAF' onClick={setFiltro}
-                 className={`border border-black rounded-full p-2 ${botaoAtivo('CONCACAF')}`}
-                 >CONCACAF</button>
+                className={`border rounded-full px-3 py-1.5 ${botaoAtivo('CONCACAF')}`}>
+                CONCACAF</button>
                 <button value='CONMEBOL' onClick={setFiltro}
-                 className={`border border-black rounded-full p-2 ${botaoAtivo('CONMEBOL')}`}
-                 >CONMEBOL</button>
+                className={`border rounded-full px-3 py-1.5 ${botaoAtivo('CONMEBOL')}`}>
+                CONMEBOL</button>
                 <button value='OFC' onClick={setFiltro}
-                 className={`border border-black rounded-full p-2 ${botaoAtivo('OFC')}`}
-                 >OFC</button>
+                className={`border rounded-full px-3 py-1.5 ${botaoAtivo('OFC')}`}>
+                OFC</button>
                 <button value='UEFA' onClick={setFiltro}
-                className={`border border-black rounded-full p-2 ${botaoAtivo('UEFA')}`}
-                >UEFA</button>
-            </div>
+                className={`border rounded-full px-3 py-1.5 ${botaoAtivo('UEFA')}`}>
+                UEFA</button>
+             </div>
         </div>
         
     )
