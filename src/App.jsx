@@ -16,14 +16,16 @@ function App() {
   const [filtroCor, setFiltroCor] = useState([])
 
   return (
-    <div className="flex flex-col items-center gap-5 m-1 py-8 bg-trofeu-bg-escuro">
+    <div className="flex flex-col items-center gap-5 px-3 m-1 py-8 bg-trofeu-bg-escuro">
       <h1 className="text-xl font-semibold text-ouro-brilhante">CATÁLOGO COPA DO MUNDO</h1>
       
-      <div className="flex justify-center w-full gap-2"> 
-        <FiltroBusca setFiltro={setFiltroBusca} filtro={filtroBusca} />
+      <div className="flex justify-center items-center w-full gap-2">
+        <div className="flex flex-col gap-2">
+          <FiltroBusca setFiltro={setFiltroBusca} filtro={filtroBusca} />
+          <FiltroTitulo setFiltro={setFiltroTitulo} filtro={filtroTitulo}/>
+        </div>
         <FiltroGrupo setFiltro={setFiltroGrupo} filtro={filtroGrupo}/>
         <FiltroConf setFiltro={setFiltroConfederacao} filtro={filtroConfederacao}/>     
-        <FiltroTitulo setFiltro={setFiltroTitulo} filtro={filtroTitulo}/>
         <FiltroCor setFiltro={setFiltroCor} filtro={filtroCor}/>
       </div>
       
